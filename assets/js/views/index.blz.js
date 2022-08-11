@@ -20,7 +20,7 @@ function build_routes(page){
 function single(){
     return `
             <h1 id="place-name" class="text-center text-4xl font-bold py-5"></h1>
-            <div class="bg-gray-100 border py-10 text-center">
+            <div class="bg-gray-100 border py-10 mt-10 text-center">
                 <p class="text-center py-3">
                     Address: <address id="place-address"></address>
                 </p>
