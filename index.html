@@ -34,9 +34,9 @@
             }
 
             const params = getPageQueryStrings();
-            let city = c;
-            let district = d;
-            let buildingNumber = b;
+            let city = params.c;
+            let district = params.d;
+            let buildingNumber = params.b;
             if(city === null || district === null || buildingNumber === null){
                 if(buildingNumber === null && district !== null && city === null){
                     window.location.replace(`http://www.blazed.city/d/index.html?c=${city}&d=${district}`);

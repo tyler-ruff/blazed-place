@@ -20,13 +20,13 @@ function build_routes(page){
 function single(){
     return `
         <h1 id="place-name" class="text-center text-4xl font-bold"></h1>
+        <div class="mx-auto container px-6 xl:px-0 py-12">
+        
+        <div id="loading-spinner" class="relative mx-auto w-16 h-16 border-4 border-dashed rounded-full animate-spin dark:border-violet-400"></div>
+
         <h2 class="text-center text-3xl font-bold">
             Storefront
         </h2>
-        <div class="mx-auto container px-6 xl:px-0 py-12">
-        
-        <div id="loading-spinner" class="w-16 h-16 border-4 border-dashed rounded-full animate-spin dark:border-violet-400"></div>
-
         <div class="flex flex-col">
         <div class="flex flex-col justify-center">
             <div class="relative">
