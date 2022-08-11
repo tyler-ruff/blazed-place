@@ -30,6 +30,8 @@
 
                 if(placesList.length === 1){
                     document.getElementById('place-name').innerHTML = placesList[0].name;
+                    document.getElementById('place-address').innerHTML = `Unit ${placesList[0].unit}, District #${district}, ${city}`;
+                    document.getElementById('place-zone').innerHTML = placesList[0].zone;
                 }
             }
 
