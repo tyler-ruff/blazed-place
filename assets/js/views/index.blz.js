@@ -39,59 +39,63 @@ function single(){
                         </p>
                     </div>
                     <div class="grid grid-cols-1 gap-x-4 gap-y-8 md:grid-cols-2 lg:grid-cols-4">
-                        <article onmouseup="navigate('https://')" class="flex flex-col dark:bg-gray-900">
+                        <article onmouseup="navigate('https://blazed.city/')" class="flex flex-col dark:bg-gray-900 group cursor-pointer">
                             <a rel="noopener noreferrer" href="#" aria-label="Te nulla oportere reprimique his dolorum">
-                                <img alt="" class="object-cover w-full h-52 dark:bg-gray-500" src="https://blazed.sirv.com/ibis/blazed-cc.jpg?w=600&h=600">
+                                <img class="object-cover w-full h-52 dark:bg-gray-500 group-hover:shadow-lg" src="https://blazed.sirv.com/ibis/blazed-cc.jpg?w=600&h=600">
                             </a>
                             <div class="flex flex-col flex-1 p-6">
-                                <a rel="noopener noreferrer" href="#" aria-label="Te nulla oportere reprimique his dolorum"></a>
                                 <a rel="noopener noreferrer" href="#" class="text-xs tracking-wider uppercase hover:underline dark:text-violet-400">Convenire</a>
-                                <h3 class="flex-1 py-2 text-lg font-semibold leading-snug">Te nulla oportere reprimique his dolorum</h3>
+                                <h3 class="flex-1 py-2 text-lg font-semibold leading-snug group-hover:underline">
+                                    Te nulla oportere reprimique his dolorum
+                                </h3>
                                 <div class="flex flex-wrap justify-between pt-3 space-x-2 text-xs dark:text-gray-400">
                                     <span>June 1, 2020</span>
                                     <span>2.1K views</span>
                                 </div>
                             </div>
                         </article>
-                        <article class="flex flex-col dark:bg-gray-900">
+                        <article onmouseup="navigate('https://blazed.city/')" class="flex flex-col dark:bg-gray-900 group cursor-pointer">
                             <a rel="noopener noreferrer" href="#" aria-label="Te nulla oportere reprimique his dolorum">
-                                <img alt="" class="object-cover w-full h-52 dark:bg-gray-500" src="https://blazed.sirv.com/ibis/blazed-city.jpg?w=600&h=600">
+                                <img class="object-cover w-full h-52 dark:bg-gray-500 group-hover:shadow-lg" src="https://blazed.sirv.com/ibis/blazed-city.jpg?w=600&h=600">
                             </a>
                             <div class="flex flex-col flex-1 p-6">
-                                <a rel="noopener noreferrer" href="#" aria-label="Te nulla oportere reprimique his dolorum"></a>
                                 <a rel="noopener noreferrer" href="#" class="text-xs tracking-wider uppercase hover:underline dark:text-violet-400">Convenire</a>
-                                <h3 class="flex-1 py-2 text-lg font-semibold leading-snug">Te nulla oportere reprimique his dolorum</h3>
+                                <h3 class="flex-1 py-2 text-lg font-semibold leading-snug group-hover:underline">
+                                    Te nulla oportere reprimique his dolorum
+                                </h3>
                                 <div class="flex flex-wrap justify-between pt-3 space-x-2 text-xs dark:text-gray-400">
-                                    <span>June 2, 2020</span>
-                                    <span>2.2K views</span>
+                                    <span>June 1, 2020</span>
+                                    <span>2.1K views</span>
                                 </div>
                             </div>
                         </article>
-                        <article class="flex flex-col dark:bg-gray-900">
+                        <article onmouseup="navigate('https://blazed.city/')" class="flex flex-col dark:bg-gray-900 group cursor-pointer">
                             <a rel="noopener noreferrer" href="#" aria-label="Te nulla oportere reprimique his dolorum">
-                                <img alt="" class="object-cover w-full h-52 dark:bg-gray-500" src="https://blazed.sirv.com/ibis/blazed-games.jpg?w=600&h=600">
+                                <img class="object-cover w-full h-52 dark:bg-gray-500 group-hover:shadow-lg" src="https://blazed.sirv.com/ibis/blazed-games.jpg?w=600&h=600">
                             </a>
                             <div class="flex flex-col flex-1 p-6">
-                                <a rel="noopener noreferrer" href="#" aria-label="Te nulla oportere reprimique his dolorum"></a>
                                 <a rel="noopener noreferrer" href="#" class="text-xs tracking-wider uppercase hover:underline dark:text-violet-400">Convenire</a>
-                                <h3 class="flex-1 py-2 text-lg font-semibold leading-snug">Te nulla oportere reprimique his dolorum</h3>
+                                <h3 class="flex-1 py-2 text-lg font-semibold leading-snug group-hover:underline">
+                                    Te nulla oportere reprimique his dolorum
+                                </h3>
                                 <div class="flex flex-wrap justify-between pt-3 space-x-2 text-xs dark:text-gray-400">
-                                    <span>June 3, 2020</span>
-                                    <span>2.3K views</span>
+                                    <span>June 1, 2020</span>
+                                    <span>2.1K views</span>
                                 </div>
                             </div>
                         </article>
-                        <article class="flex flex-col dark:bg-gray-900">
+                        <article onmouseup="navigate('https://blazed.city/')" class="flex flex-col dark:bg-gray-900 group cursor-pointer">
                             <a rel="noopener noreferrer" href="#" aria-label="Te nulla oportere reprimique his dolorum">
-                                <img alt="" class="object-cover w-full h-52 dark:bg-gray-500" src="https://blazed.sirv.com/ibis/blazed-space.jpg?w=600&h=600">
+                                <img class="object-cover w-full h-52 dark:bg-gray-500 group-hover:shadow-lg" src="https://blazed.sirv.com/ibis/blazed-space.jpg?w=600&h=600">
                             </a>
                             <div class="flex flex-col flex-1 p-6">
-                                <a rel="noopener noreferrer" href="#" aria-label="Te nulla oportere reprimique his dolorum"></a>
                                 <a rel="noopener noreferrer" href="#" class="text-xs tracking-wider uppercase hover:underline dark:text-violet-400">Convenire</a>
-                                <h3 class="flex-1 py-2 text-lg font-semibold leading-snug">Te nulla oportere reprimique his dolorum</h3>
+                                <h3 class="flex-1 py-2 text-lg font-semibold leading-snug group-hover:underline">
+                                    Te nulla oportere reprimique his dolorum
+                                </h3>
                                 <div class="flex flex-wrap justify-between pt-3 space-x-2 text-xs dark:text-gray-400">
-                                    <span>June 4, 2020</span>
-                                    <span>2.4K views</span>
+                                    <span>June 1, 2020</span>
+                                    <span>2.1K views</span>
                                 </div>
                             </div>
                         </article>

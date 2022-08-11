@@ -1,10 +1,10 @@
 const siteConfig = {
     siteTitle: "Blazed Place",
     website: 'www.blazed.place', 
-    icon: 'https://blazed.sirv.com/logo/Beaker-Dark.png', 
+    icon: 'https://blazed.sirv.com/logo/Beaker-Gray.png', 
     twitter: 'BlazedLabs',
     fbAppId: '503698127531557',
-    theme: '000000',
+    theme: 'd9d9d9',
     company: 'Blazed Labs LLC',
     motto: 'We turn Dreams into Reality.',
     nav: [{
