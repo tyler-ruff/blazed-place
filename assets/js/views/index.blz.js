@@ -19,7 +19,7 @@ function build_routes(page){
 
 function single(){
     return `
-            <h1 id="place-name" class="text-center text-4xl font-bold py-5 pt-10"></h1>
+            <h1 id="place-name" class="text-center text-4xl font-bold py-5 pt-20"></h1>
             <div class="bg-gray-100 border py-10 mt-10 text-center">
                 <p class="text-center py-3">
                     Address: <address id="place-address"></address>
@@ -28,7 +28,7 @@ function single(){
                     Zone: <span class="font-bold" id="place-zone"></span>
                 </p>
             </div>
-            <div class="py-6 sm:py-12 dark:bg-gray-800 dark:text-gray-100">
+            <div class="py-10 pt-5 md:pt-20">
                 <div class="container p-6 mx-auto space-y-8">
                     <div class="space-y-2 text-center">
                         <h2 class="text-3xl font-bold">
@@ -39,9 +39,9 @@ function single(){
                         </p>
                     </div>
                     <div class="grid grid-cols-1 gap-x-4 gap-y-8 md:grid-cols-2 lg:grid-cols-4">
-                        <article class="flex flex-col dark:bg-gray-900">
+                        <article onmouseup="navigate('https://')" class="flex flex-col dark:bg-gray-900">
                             <a rel="noopener noreferrer" href="#" aria-label="Te nulla oportere reprimique his dolorum">
-                                <img alt="" class="object-cover w-full h-52 dark:bg-gray-500" src="https://source.unsplash.com/200x200/?fashion?1">
+                                <img alt="" class="object-cover w-full h-52 dark:bg-gray-500" src="https://blazed.sirv.com/ibis/blazed-cc.jpg?w=600&h=600">
                             </a>
                             <div class="flex flex-col flex-1 p-6">
                                 <a rel="noopener noreferrer" href="#" aria-label="Te nulla oportere reprimique his dolorum"></a>
@@ -55,7 +55,7 @@ function single(){
                         </article>
                         <article class="flex flex-col dark:bg-gray-900">
                             <a rel="noopener noreferrer" href="#" aria-label="Te nulla oportere reprimique his dolorum">
-                                <img alt="" class="object-cover w-full h-52 dark:bg-gray-500" src="https://source.unsplash.com/200x200/?fashion?2">
+                                <img alt="" class="object-cover w-full h-52 dark:bg-gray-500" src="https://blazed.sirv.com/ibis/blazed-city.jpg?w=600&h=600">
                             </a>
                             <div class="flex flex-col flex-1 p-6">
                                 <a rel="noopener noreferrer" href="#" aria-label="Te nulla oportere reprimique his dolorum"></a>
@@ -69,7 +69,7 @@ function single(){
                         </article>
                         <article class="flex flex-col dark:bg-gray-900">
                             <a rel="noopener noreferrer" href="#" aria-label="Te nulla oportere reprimique his dolorum">
-                                <img alt="" class="object-cover w-full h-52 dark:bg-gray-500" src="https://source.unsplash.com/200x200/?fashion?3">
+                                <img alt="" class="object-cover w-full h-52 dark:bg-gray-500" src="https://blazed.sirv.com/ibis/blazed-games.jpg?w=600&h=600">
                             </a>
                             <div class="flex flex-col flex-1 p-6">
                                 <a rel="noopener noreferrer" href="#" aria-label="Te nulla oportere reprimique his dolorum"></a>
@@ -83,7 +83,7 @@ function single(){
                         </article>
                         <article class="flex flex-col dark:bg-gray-900">
                             <a rel="noopener noreferrer" href="#" aria-label="Te nulla oportere reprimique his dolorum">
-                                <img alt="" class="object-cover w-full h-52 dark:bg-gray-500" src="https://source.unsplash.com/200x200/?fashion?4">
+                                <img alt="" class="object-cover w-full h-52 dark:bg-gray-500" src="https://blazed.sirv.com/ibis/blazed-space.jpg?w=600&h=600">
                             </a>
                             <div class="flex flex-col flex-1 p-6">
                                 <a rel="noopener noreferrer" href="#" aria-label="Te nulla oportere reprimique his dolorum"></a>
@@ -102,14 +102,14 @@ function single(){
         
             <div id="loading-spinner" class="relative mx-auto w-16 h-16 border-4 border-dashed rounded-full animate-spin dark:border-violet-400"></div>
             <hr />
-            <h2 class="text-center text-3xl font-bold pt-5 pb-10">
+            <h2 class="text-center text-3xl font-bold py-20">
                 Storefront
             </h2>
             <div class="flex flex-col">
                 <div class="flex flex-col justify-center">
                     <div class="relative">
-                        <img class="hidden sm:block w-full" src="https://i.ibb.co/HxXSY0j/jason-wang-Nx-Awry-Abt-Iw-unsplash-1-1.png" alt="sofa" />
-                        <img class="sm:hidden w-full" src="https://i.ibb.co/B6qwqPT/jason-wang-Nx-Awry-Abt-Iw-unsplash-1.png" alt="sofa" />
+                        <img class="hidden sm:block w-full" src="https://blazed.sirv.com/logo/Lockscreen-Beaker.png?w=1000&h=1000" />
+                        <img class="sm:hidden w-full" src="https://blazed.sirv.com/logo/Beaker-Dark.png?w=800&h=800" />
                         <div class="absolute sm:bottom-8 bottom-4 pr-10 sm:pr-0 left-4 sm:left-8 flex justify-start items-start">
                             <p class="text-3xl sm:text-4xl font-semibold leading-9 text-white">Range Comfort Sofas</p>
                         </div>
@@ -117,7 +117,7 @@ function single(){
                 </div>
             <div class="mt-10 grid lg:grid-cols-2 gap-x-8 gap-y-8 items-center">
                 <div class="group group-hover:bg-opacity-60 transition duration-500 relative bg-gray-50 dark:bg-gray-800 dark:hover:bg-gray-700 sm:p-28 py-36 px-10 flex justify-center items-center">
-                    <img class="group-hover:opacity-60 transition duration-500" src="https://i.ibb.co/q79KfQr/pexels-pixabay-276583-removebg-preview-1.png" alt="sofa-2" />
+                    <img class="group-hover:opacity-60 transition duration-500" src="https://blazed.sirv.com/logo/Beaker-Cobalt.png?w=800&h=800" alt="sofa-2" />
                     <div class="absolute sm:top-8 top-4 left-4 sm:left-8 flex justify-start items-start flex-col space-y-2">
                         <div>
                             <p class="group-hover:opacity-60 transition duration-500 text-xl leading-5 text-gray-600 dark:text-white">Sectional Sofa</p>
@@ -151,7 +151,7 @@ function single(){
                 </div>
         
                 <div class="group group-hover:bg-opacity-60 transition duration-500 relative bg-gray-50 dark:bg-gray-800 dark:hover:bg-gray-700 sm:p-28 py-36 px-10 flex justify-center items-center">
-                    <img class="group-hover:opacity-60 transition duration-500" src="https://i.ibb.co/3BbZvtQ/pexels-andrea-piacquadio-3757055-removebg-preview-1.png" alt="sofa-3" />
+                    <img class="group-hover:opacity-60 transition duration-500" src="https://blazed.sirv.com/logo/Beaker-Blue.png?w=800&h=800" />
                     <div class="absolute sm:top-8 top-4 left-4 sm:left-8 flex justify-start items-start flex-col space-y-2">
                         <div>
                         <p class="group-hover:opacity-60 transition duration-500 text-xl leading-5 text-gray-600 dark:text-white">Two Seater Sofa</p>
@@ -185,7 +185,7 @@ function single(){
                 </div>
         
                 <div class="group group-hover:bg-opacity-60 transition duration-500 relative bg-gray-50 dark:bg-gray-800 dark:hover:bg-gray-700 sm:p-28 py-36 px-10 flex justify-center items-center">
-                    <img class="group-hover:opacity-60 transition duration-500" src="https://i.ibb.co/DgFfGcm/paul-weaver-n-Wid-MEQsn-AQ-unsplash-removebg-preview-1.png" alt="sofa-4" />
+                    <img class="group-hover:opacity-60 transition duration-500" src="https://blazed.sirv.com/logo/Beaker-DarkGray.png?w=800&h=800" alt="sofa-4" />
                     <div class="absolute sm:top-8 top-4 left-4 sm:left-8 flex justify-start items-start flex-col space-y-2">
                         <div>
                         <p class="group-hover:opacity-60 transition duration-500 text-xl leading-5 text-gray-600 dark:text-white">Sectional Sofa</p>
@@ -219,7 +219,7 @@ function single(){
                 </div>
         
                 <div class="group group-hover:bg-opacity-60 transition duration-500 relative bg-gray-50 dark:bg-gray-800 dark:hover:bg-gray-700 sm:p-28 py-36 px-10 flex justify-center items-center">
-                    <img class="group-hover:opacity-60 transition duration-500" src="https://i.ibb.co/K6PL38P/pexels-pixabay-276566-removebg-preview-1.png" alt="sofa-5" />
+                    <img class="group-hover:opacity-60 transition duration-500" src="https://blazed.sirv.com/logo/Beaker-Gray.png?w=800&h=800" alt="sofa-5" />
                     <div class="absolute sm:top-8 top-4 left-4 sm:left-8 flex justify-start items-start flex-col space-y-2">
                         <div>
                         <p class="group-hover:opacity-60 transition duration-500 text-xl leading-5 text-gray-600 dark:text-white">Sectional Sofa</p>
@@ -256,7 +256,7 @@ function single(){
                 </div>
         
                 <div class="group group-hover:bg-opacity-60 transition duration-500 relative bg-gray-50 dark:bg-gray-800 dark:hover:bg-gray-700 sm:p-28 py-36 px-10 flex justify-center items-center">
-                    <img class="group-hover:opacity-60 transition duration-500" src="https://i.ibb.co/zP9sWqP/phillip-goldsberry-f-Zule-Efe-A1-Q-unsplash-1-removebg-preview-1.png" alt="sofa-6" />
+                    <img class="group-hover:opacity-60 transition duration-500" src="https://blazed.sirv.com/logo/Beaker-Rainbow.png?w=800&h=800" alt="sofa-6" />
                     <div class="absolute sm:top-8 top-4 left-4 sm:left-8 flex justify-start items-start flex-col space-y-2">
                         <div>
                         <p class="group-hover:opacity-60 transition duration-500 text-xl leading-5 text-gray-600 dark:text-white">Sectional Sofa</p>
@@ -290,7 +290,7 @@ function single(){
                 </div>
         
                 <div class="group group-hover:bg-opacity-60 transition duration-500 relative bg-gray-50 dark:bg-gray-800 dark:hover:bg-gray-700 sm:p-28 py-36 px-10 flex justify-center items-center">
-                    <img class="group-hover:opacity-60 transition duration-500" src="https://i.ibb.co/SPyYgjw/pexels-martin-p-chy-1866149-removebg-preview-1.png" alt="sofa-7" />
+                    <img class="group-hover:opacity-60 transition duration-500" src="https://blazed.sirv.com/logo/john-mcmahon-ljjcoULkxL8-unsplash.jpg?w=800&h=800" alt="sofa-7" />
                     <div class="absolute sm:top-8 top-4 left-4 sm:left-8 flex justify-start items-start flex-col space-y-2">
                         <div>
                         <p class="group-hover:opacity-60 transition duration-500 text-xl leading-5 text-gray-600 dark:text-white">Sectional Sofa</p>
