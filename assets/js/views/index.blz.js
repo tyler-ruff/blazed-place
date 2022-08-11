@@ -20,15 +20,14 @@ function build_routes(page){
 function single(){
     return `
         <h1 id="place-name" class="text-center text-4xl font-bold py-5"></h1>
-        <div class="bg-gray-100 py-10 text-center">
+        <div class="bg-gray-100 border py-10 text-center">
             <p class="text-center py-3">
                 Address: <address id="place-address"></address>
             </p>
             <p class="text-center py-3">
-                Zone: <span id="place-zone"></span>
+                Zone: <span class="font-bold" id="place-zone"></span>
             </p>
         </div>
-        <hr />
         <div class="py-6 sm:py-12 dark:bg-gray-800 dark:text-gray-100">
             <div class="container p-6 mx-auto space-y-8">
                 <div class="space-y-2 text-center">
@@ -40,62 +39,78 @@ function single(){
                     </p>
                 </div>
                 <div class="grid grid-cols-1 gap-x-4 gap-y-8 md:grid-cols-2 lg:grid-cols-4">
-                    <article class="flex flex-col dark:bg-gray-900">
-                        <a rel="noopener noreferrer" href="#" aria-label="Te nulla oportere reprimique his dolorum">
-                            <img alt="" class="object-cover w-full h-52 dark:bg-gray-500" src="https://source.unsplash.com/200x200/?fashion?1">
-                        </a>
-                        <div class="flex flex-col flex-1 p-6">
-                            <a rel="noopener noreferrer" href="#" aria-label="Te nulla oportere reprimique his dolorum"></a>
-                            <a rel="noopener noreferrer" href="#" class="text-xs tracking-wider uppercase hover:underline dark:text-violet-400">Convenire</a>
-                            <h3 class="flex-1 py-2 text-lg font-semibold leading-snug">Te nulla oportere reprimique his dolorum</h3>
-                            <div class="flex flex-wrap justify-between pt-3 space-x-2 text-xs dark:text-gray-400">
-                                <span>June 1, 2020</span>
-                                <span>2.1K views</span>
+                    <a class="flex flex-col flex-1" rel="noopener noreferrer" href="#" aria-label="Te nulla oportere reprimique his dolorum group">
+                        <article class="flex flex-col dark:bg-gray-900">
+                            <img alt="" class="object-cover w-full h-52 dark:bg-gray-500 group-hover:shadow-lg" src="https://source.unsplash.com/200x200/?fashion?1">
+                            <div class="flex flex-col flex-1 p-6">
+                                <a rel="noopener noreferrer" href="#" aria-label="Te nulla oportere reprimique his dolorum"></a>
+                                <a rel="noopener noreferrer" href="#" class="text-xs tracking-wider uppercase group-hover:underline dark:text-violet-400">
+                                    Convenire
+                                </a>
+                                <h3 class="flex-1 py-2 text-lg font-semibold leading-snug group-hover:underline">
+                                    Te nulla oportere reprimique his dolorum
+                                </h3>
+                                <div class="flex flex-wrap justify-between pt-3 space-x-2 text-xs grou-hover:text-gray-600 dark:text-gray-400">
+                                    <span>June 1, 2020</span>
+                                    <span>2.1K views</span>
+                                </div>
                             </div>
-                        </div>
-                    </article>
-                    <article class="flex flex-col dark:bg-gray-900">
-                        <a rel="noopener noreferrer" href="#" aria-label="Te nulla oportere reprimique his dolorum">
-                            <img alt="" class="object-cover w-full h-52 dark:bg-gray-500" src="https://source.unsplash.com/200x200/?fashion?2">
-                        </a>
-                        <div class="flex flex-col flex-1 p-6">
-                            <a rel="noopener noreferrer" href="#" aria-label="Te nulla oportere reprimique his dolorum"></a>
-                            <a rel="noopener noreferrer" href="#" class="text-xs tracking-wider uppercase hover:underline dark:text-violet-400">Convenire</a>
-                            <h3 class="flex-1 py-2 text-lg font-semibold leading-snug">Te nulla oportere reprimique his dolorum</h3>
-                            <div class="flex flex-wrap justify-between pt-3 space-x-2 text-xs dark:text-gray-400">
-                                <span>June 2, 2020</span>
-                                <span>2.2K views</span>
+                        </article>
+                    </a>
+                    <a class="flex flex-col flex-1" rel="noopener noreferrer" href="#" aria-label="Te nulla oportere reprimique his dolorum group">
+                        <article class="flex flex-col dark:bg-gray-900">
+                            <img alt="" class="object-cover w-full h-52 dark:bg-gray-500 group-hover:shadow-lg" src="https://source.unsplash.com/200x200/?fashion?1">
+                            <div class="flex flex-col flex-1 p-6">
+                                <a rel="noopener noreferrer" href="#" aria-label="Te nulla oportere reprimique his dolorum"></a>
+                                <a rel="noopener noreferrer" href="#" class="text-xs tracking-wider uppercase group-hover:underline dark:text-violet-400">
+                                    Convenire
+                                </a>
+                                <h3 class="flex-1 py-2 text-lg font-semibold leading-snug group-hover:underline">
+                                    Te nulla oportere reprimique his dolorum
+                                </h3>
+                                <div class="flex flex-wrap justify-between pt-3 space-x-2 text-xs grou-hover:text-gray-600 dark:text-gray-400">
+                                    <span>June 1, 2020</span>
+                                    <span>2.1K views</span>
+                                </div>
                             </div>
-                        </div>
-                    </article>
-                    <article class="flex flex-col dark:bg-gray-900">
-                        <a rel="noopener noreferrer" href="#" aria-label="Te nulla oportere reprimique his dolorum">
-                            <img alt="" class="object-cover w-full h-52 dark:bg-gray-500" src="https://source.unsplash.com/200x200/?fashion?3">
-                        </a>
-                        <div class="flex flex-col flex-1 p-6">
-                            <a rel="noopener noreferrer" href="#" aria-label="Te nulla oportere reprimique his dolorum"></a>
-                            <a rel="noopener noreferrer" href="#" class="text-xs tracking-wider uppercase hover:underline dark:text-violet-400">Convenire</a>
-                            <h3 class="flex-1 py-2 text-lg font-semibold leading-snug">Te nulla oportere reprimique his dolorum</h3>
-                            <div class="flex flex-wrap justify-between pt-3 space-x-2 text-xs dark:text-gray-400">
-                                <span>June 3, 2020</span>
-                                <span>2.3K views</span>
+                        </article>
+                    </a>
+                    <a class="flex flex-col flex-1" rel="noopener noreferrer" href="#" aria-label="Te nulla oportere reprimique his dolorum group">
+                        <article class="flex flex-col dark:bg-gray-900">
+                            <img alt="" class="object-cover w-full h-52 dark:bg-gray-500 group-hover:shadow-lg" src="https://source.unsplash.com/200x200/?fashion?1">
+                            <div class="flex flex-col flex-1 p-6">
+                                <a rel="noopener noreferrer" href="#" aria-label="Te nulla oportere reprimique his dolorum"></a>
+                                <a rel="noopener noreferrer" href="#" class="text-xs tracking-wider uppercase group-hover:underline dark:text-violet-400">
+                                    Convenire
+                                </a>
+                                <h3 class="flex-1 py-2 text-lg font-semibold leading-snug group-hover:underline">
+                                    Te nulla oportere reprimique his dolorum
+                                </h3>
+                                <div class="flex flex-wrap justify-between pt-3 space-x-2 text-xs grou-hover:text-gray-600 dark:text-gray-400">
+                                    <span>June 1, 2020</span>
+                                    <span>2.1K views</span>
+                                </div>
                             </div>
-                        </div>
-                    </article>
-                    <article class="flex flex-col dark:bg-gray-900">
-                        <a rel="noopener noreferrer" href="#" aria-label="Te nulla oportere reprimique his dolorum">
-                            <img alt="" class="object-cover w-full h-52 dark:bg-gray-500" src="https://source.unsplash.com/200x200/?fashion?4">
-                        </a>
-                        <div class="flex flex-col flex-1 p-6">
-                            <a rel="noopener noreferrer" href="#" aria-label="Te nulla oportere reprimique his dolorum"></a>
-                            <a rel="noopener noreferrer" href="#" class="text-xs tracking-wider uppercase hover:underline dark:text-violet-400">Convenire</a>
-                            <h3 class="flex-1 py-2 text-lg font-semibold leading-snug">Te nulla oportere reprimique his dolorum</h3>
-                            <div class="flex flex-wrap justify-between pt-3 space-x-2 text-xs dark:text-gray-400">
-                                <span>June 4, 2020</span>
-                                <span>2.4K views</span>
+                        </article>
+                    </a>
+                    <a class="flex flex-col flex-1" rel="noopener noreferrer" href="#" aria-label="Te nulla oportere reprimique his dolorum group">
+                        <article class="flex flex-col dark:bg-gray-900">
+                            <img alt="" class="object-cover w-full h-52 dark:bg-gray-500 group-hover:shadow-lg" src="https://source.unsplash.com/200x200/?fashion?1">
+                            <div class="flex flex-col flex-1 p-6">
+                                <a rel="noopener noreferrer" href="#" aria-label="Te nulla oportere reprimique his dolorum"></a>
+                                <a rel="noopener noreferrer" href="#" class="text-xs tracking-wider uppercase group-hover:underline dark:text-violet-400">
+                                    Convenire
+                                </a>
+                                <h3 class="flex-1 py-2 text-lg font-semibold leading-snug group-hover:underline">
+                                    Te nulla oportere reprimique his dolorum
+                                </h3>
+                                <div class="flex flex-wrap justify-between pt-3 space-x-2 text-xs grou-hover:text-gray-600 dark:text-gray-400">
+                                    <span>June 1, 2020</span>
+                                    <span>2.1K views</span>
+                                </div>
                             </div>
-                        </div>
-                    </article>
+                        </article>
+                    </a>
                 </div>
             </div>
         </div>
@@ -103,9 +118,7 @@ function single(){
         
             <div id="loading-spinner" class="relative mx-auto w-16 h-16 border-4 border-dashed rounded-full animate-spin dark:border-violet-400"></div>
 
-            <hr />
-
-            <h2 class="text-center text-3xl font-bold pt-5">
+            <h2 class="text-center text-3xl font-bold pt-5 pb-10">
                 Storefront
             </h2>
             <div class="flex flex-col">
