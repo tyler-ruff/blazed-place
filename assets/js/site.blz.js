@@ -33,6 +33,15 @@ const siteConfig = {
     }],
 };
 
+const firebaseConfig = {
+    apiKey: "AIzaSyDk16j5v4q7-jzUaDVQFY_5i4Ssy9LCjbY",
+    authDomain: "blazed-city.firebaseapp.com",
+    projectId: "blazed-city",
+    storageBucket: "blazed-city.appspot.com",
+    messagingSenderId: "58777314507",
+    appId: "1:58777314507:web:c46d8ba32b81215beb274e"
+};
+
 function show_burger(event){
     document.getElementById('header-mobile').classList.remove('hidden');
 }
