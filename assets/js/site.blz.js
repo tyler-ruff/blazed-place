@@ -12,8 +12,8 @@ const siteConfig = {
         url: "https://www.blazed.world/"
     },
     {
-        text: "User Portal",
-        url: "https://www.blazed.monster/"
+        text: "About",
+        url: "https://blazed.world/index.html?p=about"
     },
     {
         text: "Cities",
@@ -24,8 +24,8 @@ const siteConfig = {
         url: "https://www.blazed.world/"
     },
     {
-        text: "User Portal",
-        url: "https://www.blazed.monster/"
+        text: "About",
+        url: "https://blazed.world/index.html?p=about"
     },
     {
         text: "Cities",
