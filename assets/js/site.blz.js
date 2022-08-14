@@ -67,6 +67,17 @@ function toggle_user_panel(event = null){
 	}
 }
 
+function openLoginModal(event){
+    document.body.classList.add('overflow-hidden');
+    document.getElementById('login-modal').classList.remove('hidden');
+    document.getElementById('login-bg').addEventListener('mouseup', closeLoginModal);
+}
+
+function closeLoginModal(event = null){
+    document.body.classList.remove('overflow-hidden');
+    document.getElementById('login-modal').classList.add('hidden');
+}
+
 function  build_user_bar(){
 	const userBar = f('div');
 	userBar.id = "user-panel";
@@ -77,11 +88,12 @@ function  build_user_bar(){
     const authWrapper = f('div');
     authWrapper.classList.add('justify-end', 'inline-flex');
     const login = f('a');
-    login.href = "/login";
+    login.href = "#Top";
     login.innerHTML = "Login";
-    login.classList.add('px-3', 'hover:underline');
+    login.addEventListener('mouseup', openLoginModal);
+    login.classList.add('px-3', 'cursor-pointer', 'hover:underline');
     const register = f('a');
-    register.href = "/register";
+    register.href = "https://blazed.world/register.html";
     register.innerHTML = "Register";
     register.classList.add('px-3', 'hover:underline');
     authWrapper.appendChild(login);
@@ -90,7 +102,6 @@ function  build_user_bar(){
     userBar.appendChild(authWrapper);
     return userBar;
 }
-
 function build_menu(config, page){
     const header = f('header');
     header.classList.add('header', 'bg-gray-900');
@@ -228,6 +239,53 @@ function build_header(config, page){
     const menu = build_menu(config, page);
     blz_header.appendChild(mobile_menu);
     blz_header.appendChild(menu);
+    document.body.innerHTML += `
+        <!-- Login Modal -->
+        <div id="login-modal" class="hidden absolute w-full items-center">
+            <div id="login-bg" class="absolute w-full h-screen bg-black opacity-75 z-10"></div>
+
+            <div class="relative mx-6 md:mx-auto w-full md:w-1/2 lg:w-1/3 z-20 m-8">
+                <div class="shadow-lg bg-white rounded-lg p-8">
+                    <div class="flex justify-end mb-6">
+                        <button onmouseup="closeLoginModal();">
+                            <span class="mr-2">Close</span>
+                            <span>
+                                <i class="fa fa-times"></i>
+                            </span>
+                        </button>
+                    </div>
+
+                    <h1 class="text-center text-2xl text-green-dark">Login</h1>
+
+                    <form class="pt-6 pb-2 my-2">
+                        <div class="mb-4">
+                            <label class="block text-sm font-bold mb-2" for="email">
+                                Email Address
+                            </label>
+                            <input class="shadow appearance-none border rounded w-full py-2 px-3 text-grey-darker" id="email" type="text" placeholder="Email Address">
+                        </div>
+                        <div class="mb-6">
+                            <label class="block text-sm font-bold mb-2" for="password">
+                                Password
+                            </label>
+                            <input class="shadow appearance-none border rounded w-full py-2 px-3 text-grey-darker mb-3" id="password" type="password" placeholder="Password">
+                        </div>
+                        <div class="block md:flex items-center justify-between">
+                            <div>
+                                <button class="bg-blue-800 hover:bg-blue-900 text-white font-bold py-2 px-4 rounded border-b-4 border-green-darkest" type="button">
+                                    Sign In
+                                </button>
+                            </div>
+
+                            <div class="mt-4 md:mt-0">
+                                <a href="#" class="text-green no-underline">Forget Password?</a>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+    </div>
+    `;
     document.body.appendChild(blz_header);
 }
 
