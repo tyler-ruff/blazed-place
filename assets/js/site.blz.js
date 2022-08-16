@@ -69,13 +69,13 @@ function toggle_user_panel(event = null){
 
 function openLoginModal(event){
     document.body.classList.add('overflow-hidden');
-    document.getElementById('login-modal').classList.remove('hidden');
+    document.getElementById('login-form').classList.remove('hidden');
     document.getElementById('login-bg').addEventListener('mouseup', closeLoginModal);
 }
 
 function closeLoginModal(event = null){
     document.body.classList.remove('overflow-hidden');
-    document.getElementById('login-modal').classList.add('hidden');
+    document.getElementById('login-form').classList.add('hidden');
 }
 
 function  build_user_bar(){
