@@ -113,7 +113,7 @@ function build_menu(config, page){
     const innerMoreWrapper = f('div');
     innerMoreWrapper.classList.add('flex', 'items-center', 'justify-between', 'h-16');
     const logoWrapper = f('div');
-    logoWrapper.classList.add('flex-1', 'md:flex', 'md:items-center', 'md:gap-12')
+    logoWrapper.classList.add('flex-1', 'md:flex', 'md:items-center', 'md:gap-12');
     const logoLink = f('a');
     logoLink.classList.add('block', 'text-teal-300', 'hover:opacity-75');
     logoLink.title = config.siteTitle;
