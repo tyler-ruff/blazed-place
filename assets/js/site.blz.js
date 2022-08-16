@@ -84,8 +84,10 @@ function  build_user_bar(){
     userBar.classList.add('hidden', 'justify-between', 'flex', 'bg-gray-400', 'border-b', 'border-gray-800', 'py-5', 'pl-3', 'md:px-10');
     const authStatus = f('span');
     authStatus.classList.add('justify-start', 'inline-flex');
+    authStatus.id = "auth-status";
     authStatus.innerHTML = 'Not logged in.';
     const authWrapper = f('div');
+    authWrapper.id = "auth-wrapper";
     authWrapper.classList.add('justify-end', 'inline-flex');
     const login = f('a');
     login.href = "#Top";
@@ -241,7 +243,7 @@ function build_header(config, page){
     blz_header.appendChild(menu);
     document.body.innerHTML += `
         <!-- Login Modal -->
-        <div id="login-modal" class="hidden absolute w-full items-center">
+        <div id="login-form" class="hidden absolute w-full items-center">
             <div id="login-bg" class="absolute w-full h-screen bg-black opacity-75 z-10"></div>
 
             <div class="relative mx-6 md:mx-auto w-full md:w-1/2 lg:w-1/3 z-20 m-8">
@@ -272,7 +274,7 @@ function build_header(config, page){
                         </div>
                         <div class="block md:flex items-center justify-between">
                             <div>
-                                <button class="bg-blue-800 hover:bg-blue-900 text-white font-bold py-2 px-4 rounded border-b-4 border-green-darkest" type="button">
+                                <button id="login-button" class="bg-blue-800 hover:bg-blue-900 text-white font-bold py-2 px-4 rounded border-b-4 border-green-darkest" type="button">
                                     Sign In
                                 </button>
                             </div>
