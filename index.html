@@ -1,72 +1,7 @@
-<!DOCTYPE html>
-<html lang="en" dir="ltr">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-
-        <link rel="dns-prefetch" href="//blazed.sirv.com/">
-        <link rel="preconnect" href="https://blazed.sirv.com/">
-
-        <link rel="stylesheet" href="https://www.blazed.place/lib/fire.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css">
-
-        <script src="https://www.blazed.place/lib/fire.js"></script>
-        <script src="https://www.blazed.place/assets/js/site.blz.js"></script>
-
-        <script src="https://www.blazed.place/assets/js/views/index.blz.js"></script>
-        
-        <script type="module">
-            import { initializeApp } from "https://www.gstatic.com/firebasejs/9.9.2/firebase-app.js";
-            import { getFirestore, collection, getDocs, query, limit, orderBy, where } from "https://www.gstatic.com/firebasejs/9.9.2/firebase-firestore.js";
-            const app = initializeApp(firebaseConfig);
-            const db = getFirestore(app);
-
-            /* DB */
-            async function getPlace(db, city, district, buildingNumber){
-                const placesCol = collection(db, 'places');
-                const q = query(placesCol, where('city', '==', city), where('district', '==', district), where('unit', '==', buildingNumber), limit(1));
-                const snapshot = await getDocs(q);
-                const placesList = snapshot.docs.map(doc => doc.data());
-                document.getElementById('loading-spinner').classList.add('hidden');
-
-                if(placesList.length === 1){
-                    document.getElementById('place-name').innerHTML = placesList[0].name;
-                    document.getElementById('place-address').innerHTML = `Unit ${placesList[0].unit}, District #${district}, ${city}`;
-                    document.getElementById('place-zone').innerHTML = placesList[0].zone;
-                }
-            }
-
-            const params = getPageQueryStrings();
-            let city = params.c;
-            let district = params.d;
-            let buildingNumber = params.b;
-            if(city === null || district === null || buildingNumber === null){
-                if(buildingNumber === null && district !== null && city === null){
-                    window.location.replace(`http://www.blazed.city/d/index.html?c=${city}&d=${district}`);
-                } else if(buildingNumber === null && district === null && city !== null){
-                    window.location.replace(`http://www.blazed.city/c/index.html?c=${city}`);
-                } else {
-                    window.location.replace(`https://blazed.city/`);
-                }
-            }
-    
-            getPlace(db, city, district, buildingNumber);
-
-        </script>
-
-        <!--[if lt IE 9]>
-            <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
-        <![endif]-->
-    </head>
-    <body class="">
-      <script>
-        let page = getPage();
-        const config = build_config(siteConfig, 
-        'Visit places in the Blazed Nation.', 
-        page);
-        let pageData = build_routes(page);
-        const blz_app = new Fire(config);
-        create_app(blz_app.config, pageData);
-      </script>
+<html>
+    <body>
+        <p>
+            blazed.place
+        </p>
     </body>
 </html>
