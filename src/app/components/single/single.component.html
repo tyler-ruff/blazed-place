@@ -1,0 +1,61 @@
+
+<div *ngFor="let place of place$ | async">
+    <h1 class="text-3xl text-center font-bold py-6">
+        {{ place.name }}
+    </h1>
+    <ng-container *ngIf="this.depth == 0">
+        <hr />
+        <ul class="text-center py-5 bg-gray-50">
+            <li>
+                <a title="Explore area #{{ place.area}}" href="https://blazed.city/explore?area={{ place.area }}" class="font-bold hover:underline">
+                    Area: {{ place.area }}
+                </a>
+            </li>
+            <li>
+                Type: {{ place.type }}
+            </li>
+        </ul>
+        <hr />
+        <div class="text-center pt-5">
+            <button type="button" (click)="move(1);" class="px-8 py-3 font-semibold rounded bg-blue-700 text-xl text-gray-100 hover:bg-blue-800 mb-5">
+                Enter Place
+            </button>
+        </div>
+        <img [src]="place.image" class="relative mx-auto mb-10" />
+    </ng-container>
+    <ng-container *ngIf="this.depth >= 1 && this.depth <= place.rooms">
+        <div class="text-center pt-5">
+            <button type="button" (click)="move(-1);" class="px-4 py-3 rounded bg-gray-700 text-mg text-gray-100 hover:bg-gray-800 mb-5 mr-5">
+                Previous Room
+            </button>
+            <span class="inline-flex font-bold mr-8">
+                Current Room:&nbsp;&nbsp;{{ depth }}&nbsp;&nbsp;/&nbsp;&nbsp;{{ place.rooms }}
+            </span>
+            <button type="button" (click)="move(1);" class="px-4 py-3 rounded bg-gray-700 text-md text-gray-100 hover:bg-gray-800 mb-5">
+                Next Room
+            </button>
+        </div>
+        <app-md-body
+            [placeSlug]="placeId"
+            [placeDepth]="depth"
+        ></app-md-body>
+        <div class="text-center pt-5">
+            <button type="button" (click)="move(-depth);" class="px-8 py-3 font-semibold rounded bg-red-700 text-xl text-gray-100 hover:bg-red-800 mb-5">
+                Leave Place
+            </button>
+        </div>
+    </ng-container>
+    <ng-container *ngIf="this.depth == place.rooms+1">
+        <div class="text-center pt-5">
+            <button type="button" (click)="move(-depth);" class="px-8 py-3 font-semibold rounded bg-red-700 text-xl text-gray-100 hover:bg-red-800 mb-5">
+                Leave Place
+            </button>
+        </div>
+    </ng-container>
+    <div class="pb-5 text-center">
+        <span class="font-bold">
+            Current Depth: {{ depth }}
+        </span>
+    </div>
+</div>
+
