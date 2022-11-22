@@ -1,6 +1,6 @@
 [
     {
-      "origin": ["http://localhost:4200/", "https://blazed.place/"],
+      "origin": ["http://localhost:4200/", "https://www.blazed.place/"],
       "method": ["GET"],
       "maxAgeSeconds": 3600
     }

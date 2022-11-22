@@ -27,7 +27,7 @@ export class MdBodyComponent implements OnInit {
   
   async render(){
     this.loading = true;
-    const refUrl = 'rooms/' + this.placeSlug + '-' + this.placeDepth + '.md';
+    const refUrl = 'rooms/' + this.placeSlug + '/room-' + this.placeDepth + '.md';
     const ref = this.storage.ref(refUrl);
     await ref.getDownloadURL().toPromise().then(
       (documentUrl) => {
